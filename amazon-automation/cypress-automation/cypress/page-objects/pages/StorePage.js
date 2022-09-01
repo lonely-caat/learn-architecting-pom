@@ -1,7 +1,9 @@
 export default class StorePage{
-    static addToBasket(item, amount=1){
-        console.log(cy.get('.product__info').contains(item).children())
-
+    // TODO: ugly or not?
+    static addToBasket(item){
+       const p = cy.get('p').contains(item)
+       const parent = p.parent()
+       const button = parent.siblings().contains('Add to Basket')
+       button.click()
     }
-
 }
