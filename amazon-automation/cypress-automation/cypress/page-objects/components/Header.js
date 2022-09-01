@@ -14,4 +14,7 @@ export default class Header {
     static signIn(){
         cy.contains('Sign In').click();
     }
+    static checkUserLoggedIn(username){
+        cy.get('.header__optionLineOne').contains(`Hello ${username}`)
+    }
 }
