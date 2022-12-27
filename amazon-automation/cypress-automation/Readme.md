@@ -1,6 +1,6 @@
 Simple POC for e2e Cypress tests
 
-Plase use:
+Please use next commands:
 
 -  "yarn install"
 -  "cy:open"
